@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Up Your Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid" style="background-image: url('../2rism/Imgs/pexels-gotta-be-worth-it-18529065.jpg');">
+        <div class="card  bg-dark text-primary bg-opacity-10" style="margin: 70px 70px;opacity: 0.5px;">
+            <div class="mx-auto col-10 col-md-8 col-lg-6 col-sm-12">
+                <header class="bg-body-secondary">
+                    <h1>Please , Fill Up The Form !</h1>
+                </header>
+                <div class="card-body">
+                    <form id="myForm" method="POST" onsubmit="onSubmit('$event')">
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label h2 text-success">Full Name</label>
+                            <input type="text" name="fullName" class="form-control" id="exampleInputName1"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAddress" class="form-label h2 text-success">Address</label>
+                            <input type="text" name="address" class="form-control" id="exampleInputAddress"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <label for="exampleInputGender"
+                                    class="form-label h2 text-success text-center">Gender</label>
+                            </div>
+                            <div class="row">
+                                <div class="cols-2">
+                                    <input type="radio" name="gender" value="male" class="form-check"
+                                        id="exampleInputGender" aria-describedby="emailHelp">
+                                    <label for="exampleInputGender"
+                                        class="form-check-label h2 text-success">Male</label>
+                                </div>
+                            </div>
+                            <input type="radio" name="gender" value="female" class="form-check" id="exampleInputGender1"
+                                aria-describedby="emailHelp">
+                            <label for="exampleInputGender1" class="form-check-label h2 text-success">Female</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDob1" class="form-label h2 text-success">Date of Birth</label>
+                            <input type="date" name="dob" class="form-control" id="exampleInputDob1"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputContact1" class="form-label h2 text-success">Contact No.</label>
+                            <input type="number" name="contact" class="form-control" id="exampleInputContact1"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label h2 text-success">Email</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputNationality" class="form-label h2 text-success">Nationality</label>
+                            <input type="text" name="nationality" class="form-control" id="exampleInputNationality"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDestination" class="form-label h2 text-success">Destination</label>
+                            <input type="text" name="destination" class="form-control" id="exampleInputDestination"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputarrivalDate" class="form-label h2 text-success">Arrival Date</label>
+                            <input type="date" name="arrivalDate" class="form-control" id="exampleInputarrivalDate"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDeparture" class="form-label h2 text-success">Departure</label>
+                            <input type="date" name="departure" class="form-control" id="exampleInputDeparture"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label h2 text-success">Payment Info.</label>
+                            <input type="text" name="payment" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" name="vaccinationStatus"
+                                class="form-label h2 text-success">Vaccination
+                                Status</label>
+                            <select name="vaccinationStatus">
+                                <option value="Done with 2nd">Done With 2nd Dose</option>
+                                <option value="Done with 1st">Done With 1st Dose</option>
+                                <option value="Done with all">Done With All Doses</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary col-sm-10 col-5">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const submit = document.querySelector('#submit');
+
+        // Attach an event listener to the button
+        submit.addEventListener('click', onSubmit);
+
+        function onSubmit(event) {
+
+
+            // Gather form data
+            const formData = {
+                fullName: document.querySelector('input[name="fullName"]').value,
+                address: document.querySelector('input[name="address"]').value,
+                gender: document.querySelector('input[name="gender"]:checked').value,
+                dob: document.querySelector('input[name="dob"]').value,
+                contact: document.querySelector('input[name="contact"]').value,
+                email: document.querySelector('input[name="email"]').value,
+                nationality: document.querySelector('input[name="nationality"]').value,
+                destination: document.querySelector('input[name="destination"]').value,
+                arrivalDate: document.querySelector('input[name="arrivalDate"]').value,
+                departure: document.querySelector('input[name="departure"]').value,
+                payment: document.querySelector('input[name="payment"]').value,
+                vaccinationStatus: document.querySelector('select[name="vaccinationStatus"]').value
+            };
+
+            console.log(formData); // Check the form data in the console
+
+            // Make a POST request to the backend
+            try {
+                const response = fetch('http://localhost:8080/tourist/register', {
+                    method: 'POST', // Change this to the appropriate HTTP method
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                // if (response.ok || response.status == 201) {
+                //     // Handle a successful response here (e.g., display a success message)
+                //     console.log('Success:', response.status);
+                alert('Registration successful! Thankyou for saving the Details !');
+                window.location.href = './home.html';
+
+                // }
+                // You can also reset the form if needed: document.getElementById('myForm').reset();
+            } catch (error) {
+                // Handle errors (e.g., display an error message)
+                console.error('Error:', error);
+                alert('Registration failed. Please try again.');
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+</body>
+
+</html>

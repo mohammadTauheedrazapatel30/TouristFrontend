@@ -1,0 +1,771 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Fonts Family */
+/* font-family: 'Poppins', sans-serif; */
+
+/* variables */
+
+:root {
+  /* color palate */
+  --primary-color: #7b61ff;
+  --secondary-color: #f6f4ff;
+  --footer-color: #f9f9f9;
+
+  /* font size & weight */
+  --title-font-size: 3.2rem;
+  --small-font-size: 1.3rem;
+  --h2-font-weight: 600;
+
+  /* card-gap */
+  --card--gap: 3.2rem;
+
+  --conatiner--size: 73%;
+}
+
+/* variable Class */
+.section-title {
+  font-size: var(--title-font-size);
+  margin-bottom: 6.4rem;
+  font-weight: 700;
+  margin-top: 12rem;
+}
+
+.container {
+  max-width: 1378px;
+  margin: auto;
+}
+
+.section-button {
+  font-size: 1.6rem;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 4px;
+  width: 105px;
+  height: 44px;
+  background: #f6f4ff;
+  border-radius: 12px;
+  cursor: pointer;
+  /* margin-left: -6rem; */
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 3.2rem;
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* main */
+.main {
+  background-image: url('./Imgs/Showcase Cover.png') no-repeat center center/cover;
+  min-height: 800px;
+  border-radius: 0 0 50px 50px;
+}
+
+/* headEr */
+.header {
+  color: #fff;
+  max-width: var(--conatiner--size);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.8rem;
+  margin-bottom: 160px;
+}
+
+/* NAVIGATIONS */
+.navlists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.navlists a {
+  opacity: 0.7;
+}
+
+.navlists a:hover {
+  opacity: 1;
+}
+
+/* USER/LOGIN */
+
+.user-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-profile h2 {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.1rem;
+  align-items: flex-end;
+  font-size: 1.4rem;
+}
+
+.hello {
+  opacity: 0.7;
+}
+
+.profile-pic {
+  width: 48px;
+  height: 48px;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* showcase CONTENT */
+.showcase-content {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.showcase-content h1 {
+  margin-bottom: 42px;
+}
+
+.showcase-content a {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 32px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--primary-color);
+  padding: 1.8rem 2.4rem;
+  border-radius: 1.2rem;
+}
+
+.showcase-content a:hover {
+  background: var(--primary-color);
+  opacity: 0.9;
+}
+
+.showcase-search {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  padding-right: 1rem;
+  border-radius: 12px;
+  margin-top: 184px;
+}
+
+.filters {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-shrink: 10px;
+  flex: 10;
+  gap: 10rem;
+}
+
+.filter {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  line-height: 1.6;
+  gap: 1.5rem;
+  border-right: 1px solid rgba(194, 193, 193, 0.1);
+  padding-right: 1.5rem;
+}
+
+.filter h4 {
+  color: #5b5b5b;
+  font-weight: 300;
+}
+
+.filter h2 {
+  font-weight: 500;
+}
+
+.search-button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.search-button-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* destination */
+.destinations-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.destination-card h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.destination-card h6 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 19.5px;
+}
+
+.destination-card img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* HOTELS */
+.hotel-restaurants {
+  transition: 3s;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotel-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  transition: 0.3s;
+}
+
+.hotel-cards {
+  position: relative;
+  border-radius: 12px;
+}
+
+.hotel-cards img {
+  border-radius: 12px;
+}
+
+.hotel-cards h5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.hotel-cards h6 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 19.5px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ratings {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+/* tour/travel */
+.tours-cards h3 {
+  font-size: 2rem;
+}
+
+.tours-cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.tours-card {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+}
+
+.tours-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.tours-card-content-icons {
+  display: flex;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.tours-card-content-icons h6 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 12px;
+  color: #878787;
+}
+
+.tours-card-contents-text p {
+  margin-top: 2rem;
+}
+
+.tours-card img {
+  border-radius: 12px;
+}
+
+/* activities */
+
+.activities-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activities-cards img {
+  border-radius: 12px;
+}
+
+.activities-cards h4 {
+  font-size: 1.6rem;
+}
+
+.activities-cards img:hover{
+  transform: scale(1.5);
+  opacity: 5px;
+}
+
+/* about */
+
+#About {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  align-items: center;
+  gap: 3rem;
+}
+
+#About h2 {
+  font-size: var(--title-font-size);
+}
+
+#About p {
+  width: 556px;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+#About .section-button {
+  width: 130px;
+}
+
+
+/* footer */
+footer {
+  background: var(--footer-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-top: 120px;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+  /* align-items: center;  */
+  justify-content: space-between;
+}
+
+.footer-sections ul {
+  margin-top: 2rem;
+}
+
+.footer-section p {
+  font-size: 1.3rem;
+  width: 354px;
+  line-height: 1.9;
+  margin-block: 1rem 2rem;
+  color: #5b5b5b;
+}
+
+.footer-section a {
+  color: #5b5b5b;
+  font-size: 1.3rem;
+}
+
+.footer-section h3 {
+  font-size: 1.8rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-section:last-child {
+  margin-left: auto;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-section:last-child form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.footer-section:last-child label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  background-color: #fff;
+  color: #5b5b5b;
+  padding-left: 5px;
+}
+
+.footer-section:last-child input {
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  color: black;
+  background-color: white;
+}
+
+.footer-section:last-child img {
+  margin-right: 1rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  line-height: 1.2;
+  background-color: #fff;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  padding-right: 3rem;
+  border-radius: 12px;
+}
+
+.footer-section:last-child button {
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.footer-section:last-child button img {
+  margin-right: 0;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242323;
+  /* display: none; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+  border: 0.5px solid#242323;
+  width: 5px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* */
+.toggleOn {
+  display: none;
+}
+
+.toggleClose {
+  display: none;
+}
+
+/* For addDetails.html file */
+/* Style for the background image */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Place the background behind other content */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the entire background */
+  opacity: 0.5;
+  /* Adjust opacity as needed */
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px;
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/*For Forms */
+@import url(https://fonts.googleapis.com/css?family=Cabin:400);
+
+.webdesigntuts-workshop {
+	background: #151515;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.webdesigntuts-workshop:before,
+.webdesigntuts-workshop:after {
+	content: '';
+	display: block;	
+	height: 1px;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	position: absolute;
+	width: 800px;
+}
+
+.webdesigntuts-workshop:before {
+	background: #444;
+	background: linear-gradient(left, #151515, #444, #151515);
+	top: 192px;
+}
+
+.webdesigntuts-workshop:after {
+	background: #000;
+	background: linear-gradient(left, #151515, #000, #151515);	
+	top: 191px;
+}
+
+.webdesigntuts-workshop form {
+	background: #111;
+	background: linear-gradient(#1b1b1b, #111);
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #272727;
+	display: inline-block;
+	font-size: 0px;
+	margin: 250px auto 0;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	background: #222;	
+	background: linear-gradient(#333, #222);	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 40px;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:-moz-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #393;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.webdesigntuts-workshop input:focus::-webkit-input-placeholder { 
+	color: #efe;
+}
+
+.webdesigntuts-workshop input:focus:-moz-placeholder {
+	color: #efe;
+}
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	box-sizing: border-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 250px auto 206px;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	width: 80px;
+}	
+
+.webdesigntuts-workshop button:hover,
+.webdesigntuts-workshop button:focus {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	color: #5f5;
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}
+
+
+@keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}
+
+
+/* You can add more styles for your form elements as needed */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+    }
+
+    .gradient-custom {
+      /* fallback for old browsers */
+      background: #6a11cb;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+      background-image: url('./Imgs/Showcase\ Cover.png');
+    }
+  </style>
+</head>
+
+<body>
+  <section class="vh-100 gradient-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="login-container bg-dark text-white">
+            <h2 class="text-center text-uppercase">Login</h2>
+            <form id="login-form" class="">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('login-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get the entered username and password
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Define the correct username and password
+        var correctUsername = 'admin';
+        var correctPassword = '54321@21';
+
+        var correctUsername1 = 'sudhansu';
+        var correctPassword1 = '67543@41';
+         
+        var correctUsername2 = 'yash';
+        var correctPassword2 = '87645@Yash';
+
+
+        // Check if the entered values match the correct values
+        if (username === correctUsername && password === correctPassword || username == correctUsername1 && password == correctPassword1 || 
+        username == correctUsername2 && password == correctPassword2) {
+          alert('Login successful!');
+          // Redirect to the home page after a successful login
+          window.location.href = 'home.html'; // Change 'home.html' to your home page URL
+        } else {
+          alert('Login failed. Please check your credentials.');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

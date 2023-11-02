@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css" />
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./Imgs/icons/Vector.png" />
+
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Mobile CSS File-->
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <!-- Font Awesome For SEARCH-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Title -->
+    <title>2rism</title>
+</head>
+
+<body style="overflow: hidden;">
+    <style>
+        .search-container {
+            position: relative;
+            width: 200px;
+            transition: width 0.5s;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-input.expand {
+            width: 300px;
+        }
+
+        form {
+            color: #555;
+            display: flex;
+            padding: 2px;
+            border: 1px solid currentColor;
+            border-radius: 5px;
+        }
+
+        input[type="search"] {
+            border: none;
+            background: transparent;
+            margin: 0;
+            padding: 7px 8px;
+            font-size: 14px;
+            color: inherit;
+            border: 1px solid transparent;
+            border-radius: inherit;
+        }
+
+        input[type="search"]::placeholder {
+            color: #bbb;
+        }
+    </style>
+
+    <!-- Showcase -->
+    <main class="main" id="home" style="background-image: url('./Imgs/Showcase\ Cover.png');">
+        <!-- Header -->
+        <header class="header">
+            <!-- logo -->
+            <div class="logo">
+                <img src="./Imgs/Logo/logo.svg" alt="2rism" />
+            </div>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand text-white">
+                <ul class="navlists">
+                    <li class="navlist"><a href="#home">Home</a></li>
+                    <li class="navlist"><a href="#restaurants">Hotels</a></li>
+                    <li class="navlist"><a href="#restaurants">Restaurants</a></li>
+                    <li class="navlist"><a href="#tours">Tours</a></li>
+                    <li class="navlist"><a href="#destinations">Destinations</a></li>
+                    <li class="navlist"><a href="#activities">Activities</a></li>
+                    <!-- <li class="navlist"><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+
+            <!-- user || navigator -->
+            <div class="user-profile">
+                <div class="profile-name">
+                    <h2>
+                        <span class="hello"> Hello, </span>
+                        <span class="indiviual-name"> Yash </span>
+                    </h2>
+                </div>
+
+                <div class="profile-pic">
+                    <img src="./Imgs/ProfilePic/124164909_2212008852330390_5501660797980127002_n (1).jpg" alt="" />
+                </div>
+            </div>
+        </header>
+
+        <!-- showcase-content -->
+        <div class="showcase-content">
+            <h1>Discover the most engaging places</h1>
+            <a href="https://earth.google.com/web/" target="_blank" class="showcase-button">
+                <img src="./Imgs/icons/globe.png" alt="" /> Discover on 3D globe</a>
+        </div>
+
+        <!-- showcase-search -->
+        <div class="showcase-search">
+            <div class="filters">
+                <div class="filter">
+                    <div class="search-icon">
+                        <a href="https://www.google.com/maps">
+                            <img src="./Imgs/icons/location.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="search-text">
+                        <h4>Location</h4>
+                        <h2>Explore nearby </h2>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="search-icon">
+                        <a href="#activities">
+                            <img src="./Imgs/icons/activities.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="search-text">
+                        <h4>Activity</h4>
+                        <h2>All Activities</h2>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="search-icon">
+                        <a href="https://calendar.google.com/calendar">
+                            <img src="./Imgs/icons/calendar.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="search-text">
+                        <h4>When</h4>
+                        <h2>Choose a date</h2>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="search-icon">
+                        <img src="./Imgs/icons/guest.png" alt="" />
+                    </div>
+                    <div class="search-text">
+                        <h4>Guests</h4>
+                        <h2>1 guest</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="search-button-icon">
+                <div class="input-group">
+                    <form>
+                        <input type="search" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- popular Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <!-- title -->
+            <h2 class="section-title">Popular Destinations</h2>
+            <!-- cards -->
+            <div style="margin-bottom: 50px;">
+                <a href="home.html"
+                    style="background-color: #7b61ff; border-radius: 20px; font-size: 20px; padding: 30px;">Back To
+                    Home</a>
+            </div>
+            <div class="swiper swiper1">
+                <div class="destinations-cards swiper-wrapper">
+                    <!-- card 1 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-veronika-bykovich-12217848.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <h5>Big sur</h5>
+                        <h6>Califonia USA</h6>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-patrick-boyer-3868552.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <h5>Prescott</h5>
+                        <h6>Arizona, USA</h6>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-blue-arauz-9867744.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <h5>Fort Mayers</h5>
+                        <h6>Florida, USA</h6>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-karl-mphotography-8092929.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <h5>Tucson</h5>
+                        <h6>Arizona, USA</h6>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="https://images.unsplash.com/photo-1601425262040-ba23fe84f701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="" width="203" height="181" />
+                        </a>
+                        <h5>St. Joseph</h5>
+                        <h6>Michigan, USA</h6>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-jose-francisco-fernandez-saura-801904.jpg" alt="" width="203"
+                                height="181" />
+                        </a>
+                        <h5>Madrid</h5>
+                        <h6>Spain</h6>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-gotta-be-worth-it-18529065.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <h5>Senja Island</h5>
+                        <h6>Norway</h6>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="destination-card swiper-slide img-hover-zoom">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/pexels-thorsten-technoman-338515.jpg" alt="" width="203" height="181" />
+                        </a>
+                        <a href=""></a>
+                        <h5>Eiffel Tower</h5>
+                        <h6>Paris France</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title"> Hotels And Restaurants</h2>
+                <div class="section-button hotel-button img-hover-zoom">
+                    <a href=".hotel-card">
+                        view all <img src="./Imgs/icons/bleft.png" alt="">
+                    </a>
+                </div>
+                <div style="margin-bottom: 50px;">
+                    <a href="home.html"
+                        style="background-color: #7b61ff; border-radius: 20px; font-size: 20px; padding: 30px;">Back To
+                        Home</a>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="hotel-card">
+
+                <!-- card 1 -->
+                <div class="hotel-cards">
+                    <a href="./addDetails.html">
+                        <img src="./Imgs/Hotels&Rest/pexels-colon-freld-2373201.jpg" alt="" width="320" height="380"
+                            class="hover-zoom">
+                    </a>
+                    <h5>Monastero Santa Rosa Hotel & Spa</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Salerno, Italy</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 2 -->
+                <div class="hotel-cards">
+                    <a href="./addDetails.html">
+                        <img src="./Imgs/Hotels&Rest/pexels-nik-cvetkovic-13935520.jpg" alt="" width="320" height="380">
+                    </a>
+                    <h5>Grand Hotel Tremezzo</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Lake Como, Italy</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 3 -->
+                <div class="hotel-cards">
+                    <img src="./Imgs/Hotels&Rest/pexels-hemant-singh-chauhan-18526645.jpg" alt="" width="320"
+                        height="380">
+                    <h5>The Oberoi Udaivilas, Udaipur</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Udaipur, India</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=2.png" alt=""></div>
+                </div>
+                <!-- card 4 -->
+                <div class="hotel-cards">
+                    <img src="./Imgs/Hotels&Rest/pexels-mathilde-photos-amateurs-18603101.jpg" alt="" width="320"
+                        height="380">
+                    <h5>AKA Beverly Hills</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Los Angeles, United States</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 5 -->
+                <div class="hotel-cards off">
+                    <img src="./Imgs/Hotels&Rest/pexels-olga-lioncat-7245230.jpg" alt="" width="320" height="380">
+                    <h5>Majestic Elegance</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Dominican Republic</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 6 -->
+                <div class="hotel-cards off">
+                    <img src="./Imgs/Hotels&Rest/pexels-asad-photo-maldives-3601426.jpg" alt="" width="320"
+                        height="380">
+                    <h5>Dreams Watervilla</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Meeru Island, Maldives</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 7 -->
+                <div class="hotel-cards off">
+                    <img src="./Imgs/Hotels&Rest/pexels-pixabay-161974.jpg" alt="" width="320" height="380">
+                    <h5> Waldorf Astoria </h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Rome, Italy</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=3.png" alt=""></div>
+                </div>
+                <!-- card 8 -->
+                <div class="hotel-cards off">
+                    <img src="./Imgs/Hotels&Rest/pexels-oleksandr-p-2166559.jpg" alt="" width="320" height="380">
+                    <h5>Gilli Air</h5>
+                    <h6><img src="./Imgs/icons/map-pin-line.png" alt=""> Indonesia</h6>
+                    <div class="ratings"> <img src="./Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours/Travel -->
+    <section id="tours">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title"> Travel Tips and Advice</h2>
+                <div class="section-button hotel-button">view all <img src="./Imgs/icons/bleft.png" alt=""></div>
+                <div style="margin-bottom: 50px;">
+                    <a href="home.html"
+                        style="background-color: #7b61ff; border-radius: 20px; font-size: 20px; padding: 30px;">Back To
+                        Home</a>
+                </div>
+            </div>
+            <div class="tours-cards">
+
+                <div class="tours-card">
+                    <div class="tour-img">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/Activities/pexels-maria-orlova-4969837.jpg" alt="" width="320"
+                                height="380">
+                        </a>
+                    </div>
+                    <div class="tours-card-content">
+                        <div class="tours-card-contents-text">
+                            <h3>East Village Ice Cream Crawl</h3>
+                            <p>We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour
+                                tour. At each ice
+                                cream store we'll explore the story behind the business and see what makes the ice cream
+                                unique as you
+                                savor every…</p>
+                        </div>
+                        <div class="tours-card-content-icons">
+                            <h6><img src="./Imgs/icons/calendersml.png" alt=""> Today</h6>
+                            <h6><img src="./Imgs/icons/user.png" alt=""> Avenger Initiative</h6>
+                            <h6><img src="./Imgs/icons/message.png" alt=""> 2</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tours-card">
+                    <div class="tour-img">
+                        <a href="./addDetails.html">
+                            <img src="./Imgs/TravelTips&Advice/pexels-bryant's-juarez-5627275.jpg" alt="" width="320"
+                                height="380">
+                        </a>
+                    </div>
+                    <div class="tours-card-content">
+                        <div class="tours-card-contents-text">
+                            <h3>Brooklyn Bridge cinematic photo walk</h3>
+                            <p>This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m
+                                always open to
+                                capture clients at different locations upon request for an additional charge. </p>
+                        </div>
+                        <div class="tours-card-content-icons">
+                            <h6><img src="./Imgs/icons/calendersml.png" alt=""> Today</h6>
+                            <h6><img src="./Imgs/icons/user.png" alt=""> Ager Pagla</h6>
+                            <h6><img src="./Imgs/icons/message.png" alt="">12</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- activities -->
+    <section id="activities">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title"> Activities</h2>
+                <div class="section-button hotel-button">view all <img src="./Imgs/icons/bleft.png" alt=""></div>
+                <div style="margin-bottom: 50px;">
+                    <a href="home.html"
+                        style="background-color: #7b61ff; border-radius: 20px; font-size: 20px; padding: 30px;">Back To
+                        Home</a>
+                </div>
+            </div>
+
+
+            <!-- Activities Cards -->
+            <div class="activities-cards">
+                <div class="activities-card">
+                    <a href="./DetailsAboutThis.html">
+                        <img src="./Imgs/Activities/pexels-dana-tentis-445363.jpg" alt="" width="320" height="380">
+                    </a>
+                    <h4>Sailing</h4>
+                </div>
+                <div class="activities-card">
+                    <a href="./addDetails.html">
+                        <img src="./Imgs/Activities/pexels-diego-müller-97805.jpg" alt="" width="320" height="380">
+                    </a>
+                    <h4>Climbing</h4>
+                </div>
+                <div class="activities-card">
+                    <a href="./addDetails.html">
+                        <img src="./Imgs/Activities/pexels-visit-almaty-848595.jpg" width="320" height="380">
+                    </a>
+                    <div class="img-text">You Can Do Skiing and more Just click on the photo and add Some details <b>
+                            <a href="">To Know More ! Click Me</a>
+                        </b> </div>
+                    <h4>Skiing</h4>
+                </div>
+                <div class="activities-card">
+                    <a href="./addDetails.html">
+                        <img src="./Imgs/Activities/pexels-ekaterina-bolovtsova-5036663.jpg" alt="" width="320"
+                            height="380">
+                    </a>
+                    <h4>Hiking</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="About">
+        <div class="about-content">
+            <h2>About US</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis
+                tristique
+                imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices.
+                Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+
+            <div class="section-button hotel-button">Read More <img src="./Imgs/icons/bleft.png" alt=""></div>
+        </div>
+
+        <div class="about-img">
+            <img src="./Imgs/about img.png" alt="" width="556" height="488">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <img src="./Imgs/Logo/logoblack.svg" alt="">
+                    <p>We always make our customers happy by providing as many choises as possible</p>
+                    <div class="footer-social-icons">
+                        <img src="./Imgs/icons/facebook.png" alt="">
+                        <img src="./Imgs/icons/twitter.png" alt="">
+                        <img src="./Imgs/icons/instagram.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Menu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="">why 2rism</a></li>
+                        <li><a href="">Partner with us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Support Center</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe on our destination review <br> newsletters</h3>
+                    <form>
+                        <div class="form-section">
+                            <img src="./Imgs/icons/messagefooter.png" alt="">
+                            <label for="email"> Your Email
+                                <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com ">
+                            </label>
+                        </div>
+                        <button type="submit"><img src="./Imgs/icons/arrowleft.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+    <div class="toggleClose"><i class="uil uil-multiply"></i></div>
+    <!-- script tag -->
+    <script defer src="./JS/script.js"></script>
+
+    <script>
+        function expandSearch() {
+            var searchInput = document.querySelector('.search-input');
+            searchInput.classList.toggle('expand');
+        }
+
+        /* For Search Button */
+        const searchButton = document.getElementById('search-button');
+        const searchInput = document.getElementById('search-input');
+        searchButton.addEventListener('click', () => {
+            const inputValue = searchInput.value;
+            alert(inputValue);
+        });
+    </script>
+
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
